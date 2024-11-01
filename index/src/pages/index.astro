@@ -1,0 +1,31 @@
+---
+title: "Eruda Console Example"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Eruda Console Example"</title>
+    <script src="https://cdn.rawgit.com/liriliri/eruda/master/eruda.min.js"></script>
+    <script>
+        // Initialize Eruda
+        eruda.init();
+    </script>
+</head>
+<body>
+    <h1>Eruda Console Example</h1>
+    <button onclick="erudaToggle()">Toggle Console</button>
+    
+    <script>
+        // Example function to log messages
+        function logMessage() {
+            console.log("This is a log message from the console.");
+        }
+
+        // Log a message on load
+        window.onload = logMessage;
+    </script>
+</body>
+</html>
